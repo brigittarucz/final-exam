@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon%20(5).ico" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title> Welcome </title>
+</head>
+<style>
+    body {
+        background-color: #070707;
+    }
+    h1 {
+        color: white;
+        font-family: Poppins, sans-serif;
+        font-size: 4em;
+        text-align: center;
+        line-height: 1.3em;
+        opacity: 0;
+    }
+    @keyframes opacityHigh {
+        from { opacity: 0; }
+        to { opacity: 0.5; }
+    }
+    @keyframes opacityLow {
+        from { opacity: 0.5; }
+        to { opacity: 0; }
+    }
+    .opacityHigh {
+        animation: opacityHigh 1.5s 1 forwards;
+    }
+    .opacityLow {
+        animation: opacityLow 1.5s 1 forwards;
+    }
+    @media screen and (min-width: 600px) {
+        h1 {
+            line-height: 2.3em;
+        }
+    }
+
+</style>
+
+<body>
+    <h1 id="welcome"> Welcome </h1>
+    <h1 id="to"> to </h1>
+    <h1 id="ingenNeuron"> Ingenious Neuron </h1>
+
+
+    <script>
+        window.setTimeout(textOne, 1500);
+
+        function textOne() {
+            document.title = "to";
+        }
+
+        window.setTimeout(textTwo, 3000);
+
+        function textTwo() {
+            document.title = "Ingenious Neuron";
+        }
+
+        var hWelcome = document.getElementById("welcome");
+        var hTo = document.getElementById("to");
+        var hIngenious = document.getElementById("ingenNeuron");
+
+        window.addEventListener("load", showFirst);
+
+        function showFirst() {
+            window.removeEventListener("load", showFirst);
+            hWelcome.classList.add("opacityHigh");
+            hWelcome.addEventListener("animationend", showSecond);
+        }
+
+        function showSecond() {
+            hWelcome.removeEventListener("animationend", showSecond);
+            hWelcome.classList.add("opacityLow");
+            hTo.classList.add("opacityHigh");
+            hTo.addEventListener("animationend", showThird);
+        }
+
+        function showThird() {
+            hTo.removeEventListener("animationend", showThird);
+            hTo.classList.add("opacityLow");
+            hIngenious.classList.add("opacityHigh");
+            hIngenious.addEventListener("animationend", loadNew);
+        }
+
+        function loadNew() {
+            window.location = "homePage.html"
+        }
+
+    </script>
+</body>
+
+</html>
