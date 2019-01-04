@@ -549,8 +549,8 @@ nav hr {
 }
 
 #work9 img {
-    height: 100%;
-    margin-left: calc(50% - 90px);
+    height: 140px;
+    margin-left: calc(50% - 80px);
     animation: zoomIn 1s infinite;
 }
 
@@ -562,7 +562,8 @@ nav hr {
     grid-row: 2/span 5;
 }
 
-#scrollDown, #invisiblePortfolio {
+#scrollDown,
+#invisiblePortfolio {
     display: none;
 }
 
@@ -954,7 +955,7 @@ nav hr {
     }
 
     #work9 img {
-        height: 100%;
+        height: 220px;
         margin-left: calc(50% - 130px);
         animation: zoomIn 1s infinite;
     }
@@ -1267,8 +1268,8 @@ nav hr {
         grid-column: 3/span 9;
         grid-row: 2/span 3;
         display: grid;
-        grid-template-columns: repeat(5,1fr) ;
-        grid-template-rows: repeat(10,1fr) ;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(10, 1fr);
     }
 
     #main4 section {
@@ -1339,6 +1340,8 @@ nav hr {
         }
     }
 
+    /* Portfolio Grid */
+
     #invisiblePortfolio {
         display: block;
         background-color: #A03A7;
@@ -1349,47 +1352,127 @@ nav hr {
         grid-template-rows: repeat(15, 1fr);
         grid-template-columns: repeat(21, 1fr);
         margin-bottom: 60px;
+        grid-gap: 6px;
+    }
+
+    #work01:hover {
+        cursor: pointer;
+    }
+
+    #work02:hover {
+        cursor: pointer;
+    }
+
+    #work03:hover {
+        cursor: pointer;
+    }
+
+    #work04:hover {
+        cursor: pointer;
+    }
+
+    #work05:hover {
+        cursor: pointer;
+    }
+
+    #work06:hover {
+        cursor: pointer;
+    }
+
+    #work07:hover {
+        cursor: pointer;
+    }
+
+    #work08:hover {
+        cursor: pointer;
+    }
+
+    #work09:hover {
+        cursor: pointer;
     }
 
     #invisiblePortfolio #work01 {
-        grid-column: 1/span 8;
-        grid-row: 1/span 15;
-        background-color: aliceblue;
+        grid-column: 9/span 2;
+        grid-row: 10/span 2;
+
+        background-image: url("images/portfolioElements/01.03.01.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #invisiblePortfolio #work02 {
-        grid-column: 9/span 13;
-        grid-row: 1/span 7;
-        background-color: aquamarine;
+        grid-column: 9/span 2;
+        grid-row: 8/span 2;
+        background-image: url("images/portfolioElements/03.03.03.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #invisiblePortfolio #work03 {
-        grid-column: 9/span 2;
-        grid-row: 8/span 2;
-        background-color: lightgray;
+        grid-column: 9/span 13;
+        grid-row: 1/span 7;
+        background-image: url("images/portfolioElements/02.01.03.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: white;
     }
 
     #invisiblePortfolio #work04 {
-        grid-column: 11/span 2;
-        grid-row: 8/span 2;
-        background-color: navajowhite;
+        grid-column: 1/span 8;
+        grid-row: 1/span 15;
+        background-image: url("images/portfolioElements/03.01.02.png");
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     #invisiblePortfolio #work05 {
-        grid-column: 11/span 2;
-        grid-row: 10/span 2;
-        background-color: blue;
+        grid-column: 17/span 5;
+        grid-row: 8/span 8;
+        background-image: url("images/portfolioElements/03.02.01.png");
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #invisiblePortfolio #work06 {
-        grid-column: 9/span 2;
-        grid-row: 10/span 2;
-        background-color: fuchsia;
+        grid-column: 13/span 4;
+        grid-row: 8/span 4;
+        background-image: url("images/portfolioElements/01.04.01.gif");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #invisiblePortfolio #work07 {
-        grid-column: 13/span 4;
-        grid-row: 8/span 4;
-        background-color: darkcyan;
+        grid-column: 9/span 8;
+        grid-row: 12/span 4;
+        background-image: url("images/portfolioElements/04.02.01.png");
+        background-position: top;
+        background-size: cover;
+    }
+
+    #invisiblePortfolio #work08 {
+        grid-column: 11/span 2;
+        grid-row: 10/span 2;
+        background-image: url("images/portfolioElements/03.04.05.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: aliceblue;
+    }
+
+    #invisiblePortfolio #work09 {
+        grid-column: 11/span 2;
+        grid-row: 8/span 2;
+    }
+
+    #invisiblePortfolio #work09 img {
+        height: 60px;
+        margin-top: 10px;
+        margin-left: calc(50% - 40px);
+        animation: zoomIn 1s infinite;
     }
 }
