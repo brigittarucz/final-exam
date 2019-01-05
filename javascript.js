@@ -13,38 +13,53 @@ function closeBurgerMenu() {
 }
 
 function redirect1() {
-    window.location = "portfolioWork/work1.html";
+    window.open("portfolioWork/work1.html");
 }
 
 function redirect2() {
-    window.location = "portfolioWork/work2.html";
+    windowo.open("portfolioWork/work2.html");
 }
 
 function redirect3() {
-    window.location = "portfolioWork/work3.html";
+    window.open("portfolioWork/work3.html");
 }
 
 function redirect4() {
-    window.location = "http://ingeniousneuron.com/animationHalloween/";
+    window.open("http://ingeniousneuron.com/animationHalloween/");
 }
 
 function redirect5() {
-    window.location = "portfolioWork/work5.html";
+    window.open("portfolioWork/work5.html");
 }
 
 function redirect6() {
-    window.location = "http://ingeniousneuron.com/";
+    window.open("http://ingeniousneuron.com/");
 }
 
 function redirect7() {
-    window.location = "portfolioWork/work7.html";
+    window.open("portfolioWork/work7.html");
 }
 
 
 function redirect8() {
-    window.location = "portfolioWork/work8.html";
+    window.open("portfolioWork/work8.html");
 }
 
 function redirectFc() {
     window.location = "https://drive.google.com/open?id=1kh9G-nWJehKOfS5KaSNEGzgGVYZYxObZ";
 }
+
+window.addEventListener("scroll", showPortfolio);
+
+function showPortfolio() {
+    var invPortfolio = document.getElementById("invisiblePortfolio");
+    invPortfolio.classList.add("slideUp");
+    console.log("hey");
+
+    if (window.pageYOffset < 60) {
+        invPortfolio.classList.remove("slideUp");
+    }
+
+}
+
+

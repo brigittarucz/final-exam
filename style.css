@@ -351,6 +351,7 @@ footer {
     border-bottom: 0.5px solid grey;
 }
 
+
 /* Burger Menu */
 
 nav {
@@ -619,11 +620,20 @@ nav hr {
 }
 
 #wrapper5 header .backIcon {
-    grid-column: 1/span 1;
+    grid-column: 1/span 2;
     grid-row: 1/span 1;
     height: 42px;
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left: 20px;
+}
+
+
+#wrapper5 header .backIcon:hover {
+    cursor: pointer;
+}
+
+#wrapper5 h4 {
+    display: none;
 }
 
 #main5 {
@@ -959,6 +969,11 @@ nav hr {
         margin-left: calc(50% - 130px);
         animation: zoomIn 1s infinite;
     }
+
+    #wrapper5 header .backIcon {
+    margin-top: 20px;
+    margin-left: 100px;
+}
 }
 
 /* PC size */
@@ -987,7 +1002,6 @@ nav hr {
         margin-bottom: 0px;
         padding: 30px;
         padding-bottom: 0px;
-        overflow: hidden;
     }
 
     section h1 {
@@ -1015,7 +1029,7 @@ nav hr {
     #wrapper {
         display: grid;
         grid-template-columns: repeat(13, 1fr);
-        grid-template-rows: repeat(4, 1fr) 80px;
+        grid-template-rows: repeat(4, 1fr) 120px;
     }
 
     header {
@@ -1102,7 +1116,7 @@ nav hr {
 
     section {
         grid-column: 6/span 8;
-        grid-row: 5/span 6;
+        grid-row: 4/span 6;
     }
 
     #socialMedia,
@@ -1192,7 +1206,7 @@ nav hr {
     #wrapper3 {
         display: grid;
         grid-template-columns: repeat(13, 1fr);
-        grid-template-rows: repeat(4, 1fr) 80px;
+        grid-template-rows: repeat(4, 1fr) 120px;
     }
 
     #wrapper3 #borderScreen {
@@ -1474,5 +1488,103 @@ nav hr {
         margin-top: 10px;
         margin-left: calc(50% - 40px);
         animation: zoomIn 1s infinite;
+    }
+
+    /* Interactivity */
+
+    @keyframes slideUp {
+        0% {
+            opacity: 0;
+            transform: translateY(300px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .slideUp {
+        animation: slideUp 2s 1;
+    }
+
+    /* PortfolioContinued + WorkN */
+
+    #wrapper5 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #wrapper5 header {
+        border: 0px;
+    }
+
+    #wrapper5 header .logoBrain {
+        grid-column: 1/span 2;
+        grid-row: 1/span 1;
+        border: 0px;
+    }
+
+    #wrapper5 header .backIcon {
+        display: none;
+    }
+
+    #wrapper5 h4 {
+        display: block;
+        grid-column: 3/span 1;
+        grid-row: 1/span 1;
+        text-align: right;
+        font-size: 20px;
+        color: white;
+        text-decoration: underline;
+    }
+
+    #wrapper5 h4:hover {
+        cursor: pointer;
+    }
+
+    #main5 {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 150px 1fr 1fr 1fr 150px;
+        grid-template-rows: 1fr 40px;
+    }
+
+    #main5 section {
+        margin-top: 30px;
+        color: white;
+        grid-column: 2/span 3;
+        grid-row: 1/span 1;
+        font-family: Open Sans, cursive;
+    }
+
+    #main5 section h3 {
+        font-size: 16px;
+    }
+
+    #main5 h3 a {
+        text-decoration: none;
+        color: deeppink;
+    }
+
+    #main5 section p {
+        font-size: 12px;
+    }
+
+    #main5 section img {
+        width: 80%;
+        margin-left: 10%;
+        box-shadow: 3px 3px 30px black;
+    }
+}
+
+@media screen and (min-height: 670px) and (min-width: 1080px) {
+    body {
+        overflow: hidden;
+    }
+
+    body {
+        margin-top: 20px;
     }
 }

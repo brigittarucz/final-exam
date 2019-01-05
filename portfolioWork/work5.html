@@ -8,12 +8,29 @@
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon%20(5).ico" />
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Libre+Barcode+128|Open+Sans|Playfair+Display" rel="stylesheet">
 </head>
+    <style>
+        body {
+            overflow-y: scroll;
+        }
 
+        @media screen and (min-width: 600px) {
+
+        #main5 section img {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        }
+    </style>
 <body>
 
     <div id="wrapper5">
         <header>
-            <a href="../portfolio.html"> <img src="../images/backIcon.png" class="backIcon" alt="Go Back"> </a>
+
+            <img src="../images/backIcon.png" class="backIcon" onclick="location.href = '../portfolio.html'" alt="Go Back">
+
+            <h4 onclick="location.href = '../portfolio.html'"> Go back to Portfolio </h4>
+
             <img src="../images/logoSmall.png" class="logoBrain" alt="logo brain">
         </header>
     </div>
