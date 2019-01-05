@@ -17,7 +17,7 @@ function redirect1() {
 }
 
 function redirect2() {
-    windowo.open("portfolioWork/work2.html");
+    window.open("portfolioWork/work2.html");
 }
 
 function redirect3() {
