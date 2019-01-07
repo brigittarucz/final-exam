@@ -473,17 +473,23 @@ nav hr {
 /* Social Media */
 
 #socialMedia {
-    margin-left: calc(50% - 175px);
+    margin-left: calc(50% - 80px);
 }
 
 #socialMedia img {
-    width: 150px;
-    margin-top: 70px;
+    width: 65px;
+    margin-top: 130px;
+    margin-left: -13px;
+}
+
+#socialMedia img:hover {
+    width: 75px;
+    cursor: pointer;
 }
 
 #firstLine hr {
     z-index: 0;
-    margin-top: -100px;
+    margin-top: -60px;
     margin-left: -300px;
 }
 
