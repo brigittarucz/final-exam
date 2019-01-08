@@ -7,45 +7,62 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon%20(5).ico" />
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <title> Welcome </title>
-</head>
-<style>
-    body {
-        background-color: #070707;
-    }
-    h1 {
-        color: white;
-        font-family: Poppins, sans-serif;
-        font-size: 4em;
-        text-align: center;
-        line-height: 1.3em;
-        opacity: 0;
-    }
-    @keyframes opacityHigh {
-        from { opacity: 0; }
-        to { opacity: 0.5; }
-    }
-    @keyframes opacityLow {
-        from { opacity: 0.5; }
-        to { opacity: 0; }
-    }
-    .opacityHigh {
-        animation: opacityHigh 1.5s 1 forwards;
-    }
-    .opacityLow {
-        animation: opacityLow 1.5s 1 forwards;
-    }
 
-    @media screen and (max-width: 320px) {
-        font-size: 2.5em;
-    }
-
-    @media screen and (min-width: 600px) {
-        h1 {
-            line-height: 2.3em;
+    <style>
+        body {
+            background-color: #070707;
         }
-    }
 
-</style>
+        h1 {
+            color: white;
+            font-family: Poppins, sans-serif;
+            font-size: 4em;
+            text-align: center;
+            line-height: 1.3em;
+            opacity: 0;
+        }
+
+        @keyframes opacityHigh {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes opacityLow {
+            from {
+                opacity: 0.5;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        .opacityHigh {
+            animation: opacityHigh 1.5s 1 forwards;
+        }
+
+        .opacityLow {
+            animation: opacityLow 1.5s 1 forwards;
+        }
+
+        @media screen and (max-width: 320px) {
+            font-size: 2.5em;
+        }
+
+        @media screen and (min-width: 600px) {
+            h1 {
+                line-height: 2.3em;
+            }
+        }
+    </style>
+
+</head>
+
 
 <body>
     <h1 id="welcome"> Welcome </h1>
@@ -95,7 +112,6 @@
         function loadNew() {
             window.location = "homePage.html"
         }
-
     </script>
 </body>
 

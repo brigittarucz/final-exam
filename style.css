@@ -1065,7 +1065,7 @@ nav hr {
 
     #main4 {
         display: grid;
-        grid-template-columns: (6, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 200px 200px 320px 160px 280px 220px;
     }
 
@@ -1178,12 +1178,20 @@ nav hr {
         text-shadow: none;
     }
 
+    #navigation2 a:hover {
+        animation: whiteShadow 1s 1 forwards;
+    }
+
+    @keyframes whiteShadow {
+        to { text-shadow: 0 0 15px white, 0 0 10px blue; }
+    }
+
     main {
         grid-column: 4/span 11;
         grid-row: 1/span 5;
         display: grid;
-        grid-column: repeat(7, 1fr);
-        grid-row: repeat(9, 1fr);
+        grid-column: repeat( 7, 1fr );
+        grid-row: repeat( 9, 1fr );
     }
 
     #davidGraphics {
@@ -1503,7 +1511,6 @@ nav hr {
 
     #invisiblePortfolio {
         display: block;
-        background-color: #A03A7;
         width: 100%;
         height: 620px;
         z-index: 2;
